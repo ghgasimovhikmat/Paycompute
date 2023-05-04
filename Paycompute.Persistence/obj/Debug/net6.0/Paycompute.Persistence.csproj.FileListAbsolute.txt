@@ -1,0 +1,17 @@
+C:\Users\hikmatdell\source\repos\Projects\Paycompute\Paycompute.Persistence\bin\Debug\net6.0\Paycompute.Persistence.deps.json
+C:\Users\hikmatdell\source\repos\Projects\Paycompute\Paycompute.Persistence\bin\Debug\net6.0\Paycompute.Persistence.dll
+C:\Users\hikmatdell\source\repos\Projects\Paycompute\Paycompute.Persistence\bin\Debug\net6.0\Paycompute.Persistence.pdb
+C:\Users\hikmatdell\source\repos\Projects\Paycompute\Paycompute.Persistence\obj\Debug\net6.0\Paycompute.Persistence.csproj.AssemblyReference.cache
+C:\Users\hikmatdell\source\repos\Projects\Paycompute\Paycompute.Persistence\obj\Debug\net6.0\Paycompute.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hikmatdell\source\repos\Projects\Paycompute\Paycompute.Persistence\obj\Debug\net6.0\Paycompute.Persistence.AssemblyInfoInputs.cache
+C:\Users\hikmatdell\source\repos\Projects\Paycompute\Paycompute.Persistence\obj\Debug\net6.0\Paycompute.Persistence.AssemblyInfo.cs
+C:\Users\hikmatdell\source\repos\Projects\Paycompute\Paycompute.Persistence\obj\Debug\net6.0\Paycompute.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\hikmatdell\source\repos\Projects\Paycompute\Paycompute.Persistence\obj\Debug\net6.0\Paycompute.Persistence.dll
+C:\Users\hikmatdell\source\repos\Projects\Paycompute\Paycompute.Persistence\obj\Debug\net6.0\refint\Paycompute.Persistence.dll
+C:\Users\hikmatdell\source\repos\Projects\Paycompute\Paycompute.Persistence\obj\Debug\net6.0\Paycompute.Persistence.pdb
+C:\Users\hikmatdell\source\repos\Projects\Paycompute\Paycompute.Persistence\obj\Debug\net6.0\ref\Paycompute.Persistence.dll
+C:\Users\hikmatdell\source\repos\Projects\Paycompute\Paycompute.Persistence\bin\Debug\net6.0\Paycompute.Persistence.runtimeconfig.json
+C:\Users\hikmatdell\source\repos\Projects\Paycompute\Paycompute.Persistence\bin\Debug\net6.0\Paycompute.Entity.dll
+C:\Users\hikmatdell\source\repos\Projects\Paycompute\Paycompute.Persistence\bin\Debug\net6.0\Paycompute.Entity.pdb
+C:\Users\hikmatdell\source\repos\Projects\Paycompute\Paycompute.Persistence\obj\Debug\net6.0\Paycompute.Persistence.csproj.CopyComplete
+C:\Users\hikmatdell\source\repos\Projects\Paycompute\Paycompute.Persistence\obj\Debug\net6.0\Paycompute.Persistence.genruntimeconfig.cache
