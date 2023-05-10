@@ -14,7 +14,7 @@ namespace Paycompute.Services.Implementation
         private readonly ApplicationDbContext _context;
         public EmployeeService(ApplicationDbContext context)
         {
-            this._context = _context;
+            _context = context;
         }
         public async Task CreateAsync(Employee employee)
         {
@@ -29,12 +29,9 @@ namespace Paycompute.Services.Implementation
 
             await _context.SaveChangesAsync();
         }
-
+       
         public IEnumerable<Employee> GetALL() => _context.Employees.AsNoTracking().OrderBy(emp => emp.FullName);
-        public Employee GetById(int employeeId)
-        {
-            throw new NotImplementedException();
-        }
+        public Employee GetById(int employeeId) => _context.Employees.Where(e => e.Id == employeeId).FirstOrDefault();
 
         public decimal StudentLoanRepaymentAmount(int Id, decimal totalAmount)
         {

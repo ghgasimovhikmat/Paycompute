@@ -112,7 +112,9 @@ namespace Paycompute.Controllers
                 Phone = employee.Phone,
                 Postcode = employee.Postcode,
                 Designation = employee.Designation,
+
             };
+
             return View(model);
 
         }
@@ -190,6 +192,27 @@ namespace Paycompute.Controllers
                 ImageUrl = employee.ImageUrl
             };
             return View(model);
+        }
+        [HttpGet]
+        public IActionResult Delete(int Id)
+        {
+            var employee = _employeeService.GetById(Id);
+            if (employee == null) { return NotFound(); };
+            var model = new EmployeeDeleteViewModel()
+            {
+                Id = employee.Id,
+                FullName = employee.FirstName
+            };
+            return View(model);
+
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Delete(EmployeeDeleteViewModel model)
+        {
+            await _employeeService.DeleteAsync(model.Id);
+            return RedirectToAction(nameof(Index));
         }
     }
 }

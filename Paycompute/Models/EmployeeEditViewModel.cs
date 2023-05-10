@@ -30,7 +30,6 @@ namespace Paycompute.Models
         [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
         [Required, StringLength(50), Display(Name = "NI No.")]
-        //   [RegularExpression(@"^[A-CEGHJ-PR-TW-Z]{1}[A-CEGHJ-PR-TW-Z]{1}[0-9]{6}[A-D\s]$")]
         public string NationalInsuranceNo { get; set; }
         [Display(Name = "Payment Method")]
         public PaymentMethod PaymentMethod { get; set; }
@@ -43,5 +42,7 @@ namespace Paycompute.Models
         public string City { get; set; }
         [Required, StringLength(50), Display(Name = "Post Code")]
         public string Postcode { get; set; }
+
+    
     }
 }
