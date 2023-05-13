@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "V8Sit/nihGGun2bSghOEYHQdX4PCtWiPfBOCzGQcFKw=",
+  "Hash": "+z3OGyLHKJB2yNCPL0sHRtiUbW4v49U9LvPvrkpFh5Q=",
   "Source": "Paycompute",
   "BasePath": "_content/Paycompute",
   "Mode": "Default",
@@ -1154,6 +1154,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\employee\\232056734200639678194217319Clara.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\hikmatdell\\source\\repos\\Projects\\Paycompute\\Paycompute\\wwwroot\\images\\employee\\232257803195048463Jack.jpg",
+      "SourceId": "Paycompute",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hikmatdell\\source\\repos\\Projects\\Paycompute\\Paycompute\\wwwroot\\",
+      "BasePath": "_content/Paycompute",
+      "RelativePath": "images/employee/232257803195048463Jack.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\employee\\232257803195048463Jack.jpg"
     },
     {
       "Identity": "C:\\Users\\hikmatdell\\source\\repos\\Projects\\Paycompute\\Paycompute\\wwwroot\\images\\employee\\232931441192746525Anthony.jpg",
