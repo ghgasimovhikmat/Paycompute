@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Paycompute.Persistence;
 using Paycompute.Services;
 using Paycompute.Services.Implementation;
+using static Paycompute.Services.Implementation.NationalInsuranceContributionServic;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +17,9 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IEmployeeService, EmployeeService>();
+builder.Services.AddScoped<IPayComputationService, PayComputationService>();
+builder.Services.AddScoped<INationalInsuranceContributionService, NationalInsuranceContributionService>();
+builder.Services.AddScoped<ITaxService, TaxService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
