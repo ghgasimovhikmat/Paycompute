@@ -7,6 +7,7 @@ using Paycompute.Services;
 using Paycompute.Services.Implementation;
 using static Paycompute.Services.Implementation.NationalInsuranceContributionServic;
 using System.Data;
+using RotativaCore;
 
 namespace Paycompute.Controllers
 {
@@ -95,7 +96,7 @@ namespace Paycompute.Controllers
             ViewBag.employees = _employeeService.GetAllEmployeesForPayroll();
             ViewBag.taxYears = _payComputationService.GetAllTaxYear();
             return RedirectToAction(nameof(Index));
-          
+
         }
 
         public IActionResult Detail(int id)
@@ -175,7 +176,8 @@ namespace Paycompute.Controllers
             };
             return View(model);
         }
-      
 
+       
     }
+    
 }

@@ -103,3 +103,9 @@ C:\Users\hikmatdell\source\repos\Projects\Paycompute\Paycompute\bin\Debug\net6.0
 C:\Users\hikmatdell\source\repos\Projects\Paycompute\Paycompute\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
 C:\Users\hikmatdell\source\repos\Projects\Paycompute\Paycompute\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\hikmatdell\source\repos\Projects\Paycompute\Paycompute\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Users\hikmatdell\source\repos\Projects\Paycompute\Paycompute\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+C:\Users\hikmatdell\source\repos\Projects\Paycompute\Paycompute\bin\Debug\net6.0\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\hikmatdell\source\repos\Projects\Paycompute\Paycompute\bin\Debug\net6.0\Microsoft.CodeAnalysis.dll
+C:\Users\hikmatdell\source\repos\Projects\Paycompute\Paycompute\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\hikmatdell\source\repos\Projects\Paycompute\Paycompute\bin\Debug\net6.0\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\hikmatdell\source\repos\Projects\Paycompute\Paycompute\bin\Debug\net6.0\RotativaCore.dll
