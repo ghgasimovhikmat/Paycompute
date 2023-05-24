@@ -1,15 +1,25 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using System.IO;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
+
+using Microsoft.Extensions.Hosting.Internal;
 using Paycompute.Entity;
 using Paycompute.Models;
-using Paycompute.Services;
-using System.Net;
-using System.Reflection;
+using Paycompute.Service;
 
 namespace Paycompute.Controllers
 {
+    [Authorize]
     public class EmployeeController : Controller
     {
         private readonly IEmployeeService _employeeService;
+      
         private readonly IWebHostEnvironment _hostingEnvironment;
         public EmployeeController(IEmployeeService employeeService, IWebHostEnvironment hostingEnvironment)
         {
@@ -28,17 +38,15 @@ namespace Paycompute.Controllers
                 DateJoined = employee.DateJoined,
                 Desigination = employee.Designation,
                 City = employee.City
-
             }).ToList();
             int pageSize = 4;
             return View(EmployeeListPagination<EmployeeIndexViewModel>.Create(employees, pageNumber ?? 1, pageSize));
-           
+
         }
         [HttpGet]
         public IActionResult Create()
         {
             var employee = new EmployeeCreateViewModel();
-
             return View(employee);
         }
         [HttpPost]
@@ -47,7 +55,6 @@ namespace Paycompute.Controllers
         {
             if (ModelState.IsValid)
             {
-
                 var employee = new Employee()
                 {
                     Id = model.Id,
@@ -114,11 +121,8 @@ namespace Paycompute.Controllers
                 Phone = employee.Phone,
                 Postcode = employee.Postcode,
                 Designation = employee.Designation,
-
             };
-
             return View(model);
-
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -199,16 +203,17 @@ namespace Paycompute.Controllers
         public IActionResult Delete(int Id)
         {
             var employee = _employeeService.GetById(Id);
-            if (employee == null) { return NotFound(); };
+            if (employee == null)
+            {
+                return NotFound();
+            }
             var model = new EmployeeDeleteViewModel()
             {
                 Id = employee.Id,
-                FullName = employee.FirstName
+                FullName = employee.FullName
             };
             return View(model);
-
         }
-
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Delete(EmployeeDeleteViewModel model)

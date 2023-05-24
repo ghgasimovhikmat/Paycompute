@@ -1,16 +1,19 @@
 ﻿using Paycompute.Entity;
+using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Paycompute.Models
 {
     public class PaymentRecordCreateViewModel
     {
         public int Id { get; set; }
-        [Display(Name = "Full Name")]
         public int EmployeeId { get; set; }
         public Employee Employee { get; set; }
-        public string FullName { get; set; }
-        public string NiNo { get; set; }
+        public string  FullName { get; set; }
+        public string Nino { get; set; }
         [DataType(DataType.Date), Display(Name = "Pay Date")]
         public DateTime PayDate { get; set; } = DateTime.UtcNow;
         [Display(Name = "Pay Month")]

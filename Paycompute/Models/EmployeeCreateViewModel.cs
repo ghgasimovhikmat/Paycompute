@@ -1,5 +1,10 @@
-﻿using Paycompute.Entity;
+﻿using Microsoft.AspNetCore.Http;
+using Paycompute.Entity;
+using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Paycompute.Models
 {
@@ -32,12 +37,12 @@ namespace Paycompute.Models
         [DataType(DataType.Date), Display(Name = "Date Of Joined")]
         public DateTime DateJoined { get; set; } = DateTime.UtcNow;
         public string Phone { get; set; }
-        [Required(ErrorMessage = "Job Role is required"), StringLength(100)]
+        [Required(ErrorMessage = "Job Role is required"),StringLength(100)]
         public string Designation { get; set; }
         [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
-        [Required, StringLength(50), Display(Name = "NI No.")]
-        // [RegularExpression(@"^[A-CEGHJ-PR-TW-Z]{1}[A-CEGHJ-PR-TW-Z]{1}[0-9]{6}[A-D\s]$")]
+        [Required, StringLength(50),Display(Name ="NI No.")]
+       // [RegularExpression(@"^[A-CEGHJ-PR-TW-Z]{1}[A-CEGHJ-PR-TW-Z]{1}[0-9]{6}[A-D\s]$")]
         public string NationalInsuranceNo { get; set; }
         [Display(Name = "Payment Method")]
         public PaymentMethod PaymentMethod { get; set; }
@@ -48,7 +53,7 @@ namespace Paycompute.Models
         public string Address { get; set; }
         [Required, StringLength(50)]
         public string City { get; set; }
-        [Required, StringLength(50), Display(Name = "Post Code")]
+        [Required, StringLength(50),Display(Name ="Post Code")]
         public string Postcode { get; set; }
     }
 }
