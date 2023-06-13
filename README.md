@@ -1,7 +1,7 @@
 # Paycompute On .Net Core
 
 Implement multi-layered architecture and their dependencies on each other
-Using .net core Class Libraries
+ Using .net core Class Libraries
 Implementing several business logic
 Creating Interfaces and their Implementations
 Creating Controllers, Injecting Interfaces in Controllers
